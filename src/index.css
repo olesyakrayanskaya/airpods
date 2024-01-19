@@ -27,7 +27,7 @@
   .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 20px;
+    padding: 0 20px;
   }
   
   :active,
@@ -64,6 +64,22 @@
     background: linear-gradient(180deg, #F3D6D1 0%, rgba(235, 235, 235, 0.00) 100%);
   }
 
+  .hero_black {
+    background: linear-gradient(180deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+  }
+
+  .hero_blue {
+    background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+  }
+
+  .hero_green {
+    background: linear-gradient(180deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+  }
+
+  .hero_silver {
+    background: linear-gradient(180deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
+  }
+
   .hero__container {
     margin: 0 auto;
     max-width: 1200px;
@@ -77,8 +93,10 @@
     max-width: 800px;
     max-height: 755px;
     margin: 0 auto;
-    object-fit: contain;
-    object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
     display: none;
     position: relative;
     z-index: 200;
@@ -134,15 +152,85 @@
     height: 50%;
     border-radius: 50%;
     background: #F3D6D1;
-    animation: blur ease 3s infinite;
-    filter: blur(75px);
+    -webkit-animation: blur_pink ease 3s infinite;
+            animation: blur_pink ease 3s infinite;
+    -webkit-filter: blur(75px);
+            filter: blur(75px);
     bottom: 15%;
     right: 4%;
     z-index: 10;
     pointer-events: none;
   }
 
-  @keyframes blur {
+  .hero__container_green::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: #DDEAD9;
+    -webkit-animation: blur_green ease 3s infinite;
+            animation: blur_green ease 3s infinite;
+    -webkit-filter: blur(75px);
+            filter: blur(75px);
+    bottom: 15%;
+    right: 4%;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .hero__container_blue::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: #CADBEB;
+    -webkit-animation: blur_blue ease 3s infinite;
+            animation: blur_blue ease 3s infinite;
+    -webkit-filter: blur(75px);
+            filter: blur(75px);
+    bottom: 15%;
+    right: 4%;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .hero__container_black::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: #B6B6B6;
+    -webkit-animation: blur_black ease 3s infinite;
+            animation: blur_black ease 3s infinite;
+    -webkit-filter: blur(75px);
+            filter: blur(75px);
+    bottom: 15%;
+    right: 4%;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .hero__container_silver::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: #FAFAFA;
+    -webkit-animation: blur_silver ease 4s infinite;
+            animation: blur_silver ease 4s infinite;
+    -webkit-filter: blur(75px);
+            filter: blur(75px);
+    bottom: 15%;
+    right: 4%;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  @keyframes blur_pink {
     0% {
       background: #F3D6D1;
     }
@@ -156,6 +244,131 @@
     }
   }
 
+  @-webkit-keyframes blur_pink {
+    0% {
+      background: #F3D6D1;
+    }
+
+    50% {
+      background: #f3c8c1;
+    }
+
+    100% {
+      background: #F3D6D1;
+    }
+  }
+
+  @-webkit-keyframes blur_black {
+    0% {
+      background: #B6B6B6;
+    }
+
+    50% {
+      background: #949191;
+    }
+
+    100% {
+      background: #B6B6B6;
+    }
+  }
+
+  @keyframes blur_black {
+    0% {
+      background: #B6B6B6;
+    }
+
+    50% {
+      background: #949191;
+    }
+
+    100% {
+      background: #B6B6B6;
+    }
+  }
+
+  @-webkit-keyframes blur_blue {
+    0% {
+      background: #CADBEB;
+    }
+
+    50% {
+      background: #a4bacf;
+    }
+
+    100% {
+      background: #CADBEB;
+    }
+  }
+
+  @keyframes blur_blue {
+    0% {
+      background: #CADBEB;
+    }
+
+    50% {
+      background: #a4bacf;
+    }
+
+    100% {
+      background: #CADBEB;
+    }
+  }
+
+  @-webkit-keyframes blur_green {
+    0% {
+      background: #DDEAD9;
+    }
+
+    50% {
+      background: #beecb0;
+    }
+
+    100% {
+      background: #DDEAD9;
+    }
+  }
+
+  @keyframes blur_green {
+    0% {
+      background: #DDEAD9;
+    }
+
+    50% {
+      background: #beecb0;
+    }
+
+    100% {
+      background: #DDEAD9;
+    }
+  }
+
+  @-webkit-keyframes blur_silver {
+    0% {
+      background: #FAFAFA;
+    }
+
+    50% {
+      background: #c7c4c4;
+    }
+
+    100% {
+      background: #FAFAFA;
+    }
+  }
+
+  @keyframes blur_silver {
+    0% {
+      background: #FAFAFA;
+    }
+
+    50% {
+      background: #d4d1d1;
+    }
+
+    100% {
+      background: #FAFAFA;
+    }
+  }
 
   .header {
     display: flex;
@@ -204,6 +417,74 @@
 
   .nav__link:hover {
     text-decoration: underline;
+  }
+
+  .colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .colors__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .colors__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .colors__text {
+    margin-bottom: 80px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .colors__set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 160px;
+  }
+
+  .colors__item {
+    border: 1px #777777 solid;
+    border-radius: 12px;
+    width: 260px;
+    height: 275px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colors__item_active {
+    display: none;
+  }
+
+  .colors__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  @media (max-width: 1200px) {
+    .colors__set {
+      justify-content: center;
+    }
   }
   
   @media (max-width: 1020px) {
@@ -324,6 +605,11 @@
         bottom: 20%;
       }
 
+      .colors__title {
+        margin-bottom: 30px;
+        font-size: 26px;
+        font-weight: 500;
+      }
   }
 
   @media (max-width: 330px) {
