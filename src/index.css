@@ -89,9 +89,8 @@
   }
 
   .hero__img {
-    width: 70%;
-    max-width: 800px;
-    max-height: 755px;
+    width: 800px;
+    height: 755px;
     margin: 0 auto;
     -o-object-fit: contain;
        object-fit: contain;
@@ -485,6 +484,15 @@
     .colors__set {
       justify-content: center;
     }
+
+    .hero__img {
+      width: 700px;
+      height: 655px;
+    }
+
+    .hero__span[data-text="m"] {
+      right: 17%;
+    }
   }
   
   @media (max-width: 1020px) {
@@ -493,6 +501,9 @@
         font-size: 170px;
       }
     
+      .hero__span[data-text="m"] {
+        right: 17%;
+      }
   }
 
   @media (max-width: 800px) {
@@ -500,10 +511,20 @@
     .hero__title {
         font-size: 130px;
       }
+
+
+    .hero__img {
+      width: 600px;
+      height: 555px;
+    }
     
-      .hero__span[data-text="m"] {
-        right: 19%;
-      }
+    .hero__span[data-text="m"] {
+      right: 16%;
+    }
+
+    .hero__span[data-text="ax"] {
+      bottom: 19%;
+    }
   }
 
   @media (max-width: 655px) {
@@ -511,21 +532,37 @@
     .hero__title {
         font-size: 100px;
       }
-    
-      .hero__span[data-text="m"] {
-        right: 20%;
-      }
+
+      .hero__img {
+        width: 500px;
+        height: 455px;
+      }    
 
       .header__btn {
         height: 40px;
         width: 100px;
       }
+
+      .hero__span[data-text="m"] {
+        right: 18%;
+        top: 62%;
+      }
+    
+      .hero__span[data-text="ax"] {
+        bottom: 17%;
+      }
+
   }
 
   @media (max-width: 490px) {
 
     .hero__title {
         font-size: 70px;
+      }
+
+      .hero__img {
+        width: 300px;
+        height: 255px;
       }
 
       .hero__span[data-text="air"] {
@@ -543,7 +580,7 @@
       }
     
       .hero__span[data-text="m"] {
-        right: 21%;
+        right: 22%;
         top: 68%;
       }
     
@@ -602,7 +639,7 @@
     
       .hero__span[data-text="ax"] {
         right: 5%;
-        bottom: 20%;
+        bottom: 14%;
       }
 
       .colors__title {
@@ -612,7 +649,7 @@
       }
   }
 
-  @media (max-width: 330px) {
+  @media (max-width: 370px) {
 
       .hero__span[data-text="air"] {
         top: 60%;
@@ -630,7 +667,7 @@
     
       .hero__span[data-text="m"] {
         top: 70%;
-        right: 19%;
+        right: 20%;
       }
     
       .hero__span[data-text="ax"] {
