@@ -54,6 +54,14 @@ input {
   cursor: pointer;
 }
 
+h2 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -487,10 +495,7 @@ input {
 }
 
 .composition__title {
-  font-size: 64px;
-  font-weight: 700;
   margin-bottom: 20px;
-  line-height: 120%;
 }
 
 .composition__text_lg {
@@ -536,11 +541,7 @@ input {
 }
 
 .case__title {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 120%;
   margin-bottom: 17px;
-  text-align: center;
 }
 
 .case__text {
@@ -559,6 +560,32 @@ input {
 
 .case__img_active {
   display: block;
+}
+
+.hours {
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  padding-bottom: 98px;
+}
+
+.hours__title {
+  margin-bottom: 40px;
+}
+
+.hours__num {
+  font-size: 210px;
+  font-weight: 700;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 40px;
+}
+
+.hours__text {
+  width: 403px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
@@ -653,7 +680,7 @@ input {
     padding: 40px 0;
   }
 
-  .case__title {
+  h2 {
     font-size: 34px;
   }
 
@@ -704,6 +731,14 @@ input {
     margin-bottom: 20px;
   }
 
+  .hours__num {
+    font-size: 100px;
+  }
+
+  .hours__text {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 430px) {
@@ -714,7 +749,7 @@ input {
 
   }
 
-  .composition__title {
+  h2 {
     font-size: 32px;
   }
 
@@ -787,6 +822,11 @@ input {
   .hero__span[data-text="ax"] {
     right: 5%;
     bottom: 15%;
+  }
+
+  .case__img {
+    width: 220px;
+    height: auto;
   }
 
 }
