@@ -10,6 +10,7 @@ const heroContainer = document.querySelector('.hero__container');
 const heroImg = document.querySelectorAll('.hero__img');
 const colorsItem = document.querySelectorAll('.colors__item');
 const sideAirpods = document.querySelectorAll('.composition__img');
+const caseAirpods = document.querySelectorAll('.case__img');
 
 greenAirpods.addEventListener('click', () => {
   heroImg.forEach((img) => img.classList.remove('hero__img_active'));
@@ -22,6 +23,8 @@ greenAirpods.addEventListener('click', () => {
   greenAirpods.classList.add('colors__item_active');
   sideAirpods.forEach((img) => img.classList.remove('composition__img_active'));
   document.getElementById('side-green').classList.add('composition__img_active');
+  caseAirpods.forEach((img) => img.classList.remove('case__img_active'));
+  document.getElementById('case-green').classList.add('case__img_active');
 });
 
 pinkAirpods.addEventListener('click', () => {
@@ -35,6 +38,8 @@ pinkAirpods.addEventListener('click', () => {
   pinkAirpods.classList.add('colors__item_active');
   sideAirpods.forEach((img) => img.classList.remove('composition__img_active'));
   document.getElementById('side-pink').classList.add('composition__img_active');
+  caseAirpods.forEach((img) => img.classList.remove('case__img_active'));
+  document.getElementById('case-pink').classList.add('case__img_active');
 });
 
 blueAirpods.addEventListener('click', () => {
@@ -48,6 +53,8 @@ blueAirpods.addEventListener('click', () => {
   blueAirpods.classList.add('colors__item_active');
   sideAirpods.forEach((img) => img.classList.remove('composition__img_active'));
   document.getElementById('side-blue').classList.add('composition__img_active');
+  caseAirpods.forEach((img) => img.classList.remove('case__img_active'));
+  document.getElementById('case-blue').classList.add('case__img_active');
 });
 
 silverAirpods.addEventListener('click', () => {
@@ -61,6 +68,8 @@ silverAirpods.addEventListener('click', () => {
   silverAirpods.classList.add('colors__item_active');
   sideAirpods.forEach((img) => img.classList.remove('composition__img_active'));
   document.getElementById('side-silver').classList.add('composition__img_active');
+  caseAirpods.forEach((img) => img.classList.remove('case__img_active'));
+  document.getElementById('case-silver').classList.add('case__img_active');
 });
 
 blackAirpods.addEventListener('click', () => {
@@ -74,4 +83,6 @@ blackAirpods.addEventListener('click', () => {
   blackAirpods.classList.add('colors__item_active');
   sideAirpods.forEach((img) => img.classList.remove('composition__img_active'));
   document.getElementById('side-black').classList.add('composition__img_active');
+  caseAirpods.forEach((img) => img.classList.remove('case__img_active'));
+  document.getElementById('case-black').classList.add('case__img_active');
 });

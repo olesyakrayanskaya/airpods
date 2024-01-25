@@ -520,12 +520,44 @@ input {
   width: 245px;
   height: 425px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .composition__img_active {
+  display: block;
+}
+
+.case {
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  padding: 80px 0;
+}
+
+.case__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.case__text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.case__img {
+  width: 400px;
+  height: 365px;
+  object-fit: contain;
+  object-position: center;
+  display: none;
+  margin: 0 auto;
+}
+
+.case__img_active {
   display: block;
 }
 
@@ -615,6 +647,19 @@ input {
   .composition__description {
     width: 100%;
     margin-bottom: 40px;
+  }
+
+  .case {
+    padding: 40px 0;
+  }
+
+  .case__title {
+    font-size: 34px;
+  }
+
+  .case__img {
+    width: 300px;
+    height: auto;
   }
 
 }
