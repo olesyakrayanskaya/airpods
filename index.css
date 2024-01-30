@@ -932,6 +932,10 @@ h2 {
 
 @media (max-width: 490px) {
 
+  .modal {
+    width: 100%;
+  }
+
   .hero__title {
     font-size: 70px;
   }
@@ -976,10 +980,6 @@ h2 {
 
   .hours__text {
     width: 100%;
-  }
-
-  .footer {
-    height: 320px;
   }
 
   .man, .man::after {
