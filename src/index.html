@@ -15,6 +15,119 @@
     <title>Airpods</title>
   </head>
   <body>
+    <div class="modal" id="cart">
+      <span class="modal__close" id="close">&times;</span>
+      <h3 class="modal__title">Cart</h3>
+      <div class="modal__inner">
+        <div class="modal__product product" id="prod-pink">
+          <img
+            class="product__img"
+            src="./assets/img/airpods-max-select-pink-color.png"
+            alt="airpods"
+          />
+          <span class="product__price">185 &#36;</span>
+          <div class="product__action">
+            <button class="product__btn product__btn_decrement">-</button>
+            <span class="product__count">0</span>
+            <button class="product__btn product__btn_increment">+</button>
+            <img class="product__del" src="./assets/img/trash.svg" alt="del" />
+          </div>
+        </div>
+        <div class="modal__product product" id="prod-green">
+          <img
+            class="product__img"
+            src="./assets/img/airpods-max-select-green-color.png"
+            alt="airpods"
+          />
+          <span class="product__price">185 &#36;</span>
+          <div class="product__action">
+            <button class="product__btn product__btn_decrement">-</button>
+            <span class="product__count">0</span>
+            <button class="product__btn product__btn_increment">+</button>
+            <img class="product__del" src="./assets/img/trash.svg" alt="del" />
+          </div>
+        </div>
+        <div class="modal__product product" id="prod-blue">
+          <img
+            class="product__img"
+            src="./assets/img/airpods-max-select-blue-color.png"
+            alt="airpods"
+          />
+          <span class="product__price">185 &#36;</span>
+          <div class="product__action">
+            <button class="product__btn product__btn_decrement">-</button>
+            <span class="product__count">0</span>
+            <button class="product__btn product__btn_increment">+</button>
+            <img class="product__del" src="./assets/img/trash.svg" alt="del" />
+          </div>
+        </div>
+        <div class="modal__product product" id="prod-silver">
+          <img
+            class="product__img"
+            src="./assets/img/airpods-max-select-silver-color.png"
+            alt="airpods"
+          />
+          <span class="product__price">185 &#36;</span>
+          <div class="product__action">
+            <button class="product__btn product__btn_decrement">-</button>
+            <span class="product__count">0</span>
+            <button class="product__btn product__btn_increment">+</button>
+            <img class="product__del" src="./assets/img/trash.svg" alt="del" />
+          </div>
+        </div>
+        <div class="modal__product product" id="prod-black">
+          <img
+            class="product__img"
+            src="./assets/img/airpods-max-select-black-color.png"
+            alt="airpods"
+          />
+          <span class="product__price">185 &#36;</span>
+          <div class="product__action">
+            <button class="product__btn product__btn_decrement">-</button>
+            <span class="product__count">0</span>
+            <button class="product__btn product__btn_increment">+</button>
+            <img class="product__del" src="./assets/img/trash.svg" alt="del" />
+          </div>
+        </div>
+      </div>
+      <div class="modal__colors">
+        <div class="modal__item" id="modal-pink">
+          <img
+            class="modal__img"
+            src="./assets/img/airpods-max-select-pink-color.png"
+            alt="pink-airpods"
+          />
+        </div>
+        <div class="modal__item" id="modal-green">
+          <img
+            class="modal__img"
+            src="./assets/img/airpods-max-select-green-color.png"
+            alt="pink-airpods"
+          />
+        </div>
+        <div class="modal__item" id="modal-blue">
+          <img
+            class="modal__img"
+            src="./assets/img/airpods-max-select-blue-color.png"
+            alt="pink-airpods"
+          />
+        </div>
+        <div class="modal__item" id="modal-silver">
+          <img
+            class="modal__img"
+            src="./assets/img/airpods-max-select-silver-color.png"
+            alt="pink-airpods"
+          />
+        </div>
+        <div class="modal__item" id="modal-black">
+          <img
+            class="modal__img"
+            src="./assets/img/airpods-max-select-black-color.png"
+            alt="pink-airpods"
+          />
+        </div>
+      </div>
+    </div>
     <section class="hero hero_pink">
       <div class="hero__container hero__container_pink">
         <header class="hero__header header">
@@ -238,14 +351,27 @@
     <footer class="footer">
       <p class="footer__text">Find a retailer near you</p>
       <p class="footer__contact">Or call 800 207 758</p>
-      <a class="footer__link"><img class="footer__logo" src="./assets/img/logo_footer.svg" alt="logo"></a>
+      <a class="footer__link"
+        ><img
+          class="footer__logo"
+          src="./assets/img/logo_footer.svg"
+          alt="logo"
+      /></a>
       <nav class="footer__nav">
         <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link">Copyright © 2023 Apple Inc. </a></li>
-          <li class="footer__item"><a class="footer__link">All rights reserved.</a></li>
-          <li class="footer__item"><a class="footer__link">Legal Notices</a></li>
+          <li class="footer__item">
+            <a class="footer__link">Copyright © 2023 Apple Inc. </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">All rights reserved.</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">Legal Notices</a>
+          </li>
           <li class="footer__item"><a class="footer__link">Site Map</a></li>
-          <li class="footer__item"><a class="footer__link">Privacy Policy</a></li>
+          <li class="footer__item">
+            <a class="footer__link">Privacy Policy</a>
+          </li>
         </ul>
       </nav>
     </footer>

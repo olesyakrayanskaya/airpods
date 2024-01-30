@@ -645,6 +645,132 @@ h2 {
   flex-wrap: wrap;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 500;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(216, 215, 215, 0.98);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.modal__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal__close {
+  color: #2b2929;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__inner {
+  width: 90%;
+  height: 70%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.product {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.product__img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.product__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.product__btn {
+  width: 25px;
+  height: 25px;
+  border: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #cac8c8;
+}
+
+.product__del {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  cursor: pointer;
+}
+
+.product__count {
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.product__price {
+  font-size: 20px;
+}
+
+.modal__colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal__item {
+  border: 1px #a19f9f solid;
+  border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+
 @media (max-width: 1200px) {
   .colors__set {
     justify-content: center;
@@ -692,6 +818,30 @@ h2 {
 }
 
 @media (max-width: 800px) {
+
+  .modal {
+    overflow-y: scroll;
+  }
+
+  .modal__inner {
+    min-height: 50%;
+    height: auto;
+  }
+
+  .product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product__img {
+    width: 80px;
+    height: 80px;
+  }
 
   .hero__title {
     font-size: 130px;
