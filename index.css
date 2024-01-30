@@ -594,7 +594,7 @@ h2 {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  background-image: url(./assets/img/man.jpg);
+  background-image: url(./src/assets/img/man.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -605,7 +605,7 @@ h2 {
   content: '';
   width: 100%;
   height: calc(100vh + 200px);
-  background-image: url(./assets/img/rings.png);
+  background-image: url(./src/assets/img/rings.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
